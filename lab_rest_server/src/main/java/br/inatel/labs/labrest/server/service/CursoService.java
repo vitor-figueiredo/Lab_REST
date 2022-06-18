@@ -21,13 +21,19 @@ public class CursoService {
 	
 	@PostConstruct
 	private void setup() {
-		Curso c1 = new Curso(1L, "REST com Spring Boot", 20);
-		Curso c2 = new Curso(2L, "Java 11", 80);
-		Curso c3 = new Curso(3L, "Configurado e Desenvolvendo com Eclipxe", 40);
+		Curso c1 = new Curso(1L, "Serviços REST com Spring Boot", 40);
+		Curso c2 = new Curso(2L, "Programação Java 11", 80);
+		Curso c3 = new Curso(3L, "Dominando a IDE Eclipse", 20);
+		Curso c4 = new Curso(4L, "Programação reativa com Spring Webflux", 60);
+		Curso c5 = new Curso(5L, "Desenvolvimento Frontend com Angular", 120);
+		Curso c6 = new Curso(6L, "Abordagem BDD para Testes Unitários", 120);
 		
-		mapa.put(c1.getId(), c1);
-		mapa.put(c2.getId(), c2);
-		mapa.put(c3.getId(), c3);
+		mapa.put( c1.getId(), c1 );
+		mapa.put( c2.getId(), c2 );
+		mapa.put( c3.getId(), c3 );
+		mapa.put( c4.getId(), c4 );
+		mapa.put( c5.getId(), c5 );
+		mapa.put( c6.getId(), c6 );
 	}
 	
 	

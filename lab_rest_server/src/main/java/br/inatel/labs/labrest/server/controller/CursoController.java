@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,6 +20,7 @@ import org.springframework.web.server.ResponseStatusException;
 import br.inatel.labs.labrest.server.model.Curso;
 import br.inatel.labs.labrest.server.service.CursoService;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/curso")
 public class CursoController {
@@ -54,7 +56,7 @@ public class CursoController {
 	
 	@PutMapping
 	public void atualizar(@RequestBody Curso curso) {
-		service.atualizarCurso(curso);;
+		service.atualizarCurso(curso);
 	}
 	
 	
